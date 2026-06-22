@@ -1,16 +1,3 @@
-/**
- * utils/calculate.js
- * ---------------------------------------------------------
- * Aquí vive SOLO la matemática. Ninguna línea de este archivo
- * sabe que existe un botón o una pantalla: recibe números y
- * devuelve números (o el texto "Error"). Esto se llama separar
- * la "lógica de negocio" de la interfaz, y es justo lo que pide
- * la prueba cuando habla de "código limpio y modular".
- *
- * Ventaja práctica: puedes probar esta función con Node, sin
- * abrir el navegador, y reutilizarla en cualquier otro proyecto.
- */
-
 export function calculate(operator, a, b) {
   switch (operator) {
     case '+':
