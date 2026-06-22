@@ -109,21 +109,10 @@ function Calculator() {
     }
   }
 
-// Texto pequeño arriba de la pantalla. Antes solo mostraba "12 +".
-  // Ahora, si ya empezaste a escribir el segundo número, lo agregamos
-  // también: "12 + 5". Mientras "waitingForOperand" sea true (recién
-  // pulsaste el operador, todavía no escribes nada), no hay segundo
-  // número que mostrar.
   const expression = operator
     ? `${formatResult(previousValue)} ${operator} ${waitingForOperand ? '' : displayValue}`
     : ''
 
-  // Número grande de abajo. Mientras hay una operación pendiente Y ya
-  // escribiste el segundo número, en vez de mostrar lo que tecleaste
-  // mostramos el RESULTADO calculado en ese instante (vista previa en
-  // vivo). En cualquier otro caso (escribiendo el primer número, o ya
-  // sin operación pendiente porque pulsaste "="), se muestra tal cual
-  // lo que hay en displayValue.
   const bigValue =
     operator && !waitingForOperand
       ? formatResult(calculate(operator, previousValue, parseFloat(displayValue)))

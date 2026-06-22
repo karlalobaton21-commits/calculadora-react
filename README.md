@@ -1,7 +1,6 @@
 # Calculadora React
 
-Calculadora web construida con **React (hooks) + Vite**, hecha para la prueba técnica
-"Desarrollo de una calculadora web".
+Calculadora web construida con React (hooks) + Vite
 
 ## Requisitos cumplidos
 
@@ -19,22 +18,13 @@ Necesitas tener [Node.js](https://nodejs.org/) instalado (versión 18 o superior
 ```bash
 # 1. Instalar dependencias
 npm install
-
 # 2. Levantar el servidor de desarrollo
 npm run dev
 ```
-
 Esto abrirá la app en `http://localhost:5173`.
 
-Para generar la versión de producción (archivos estáticos optimizados):
-
-```bash
-npm run build
-npm run preview   # para probar el build localmente
-```
 
 ## Estructura del proyecto
-
 ```
 src/
 ├── components/
@@ -44,10 +34,10 @@ src/
 │   ├── ButtonGrid.jsx     # Genera los botones a partir de un arreglo de configuración
 │   └── Button.jsx         # Botón genérico y reutilizable
 ├── utils/
-│   └── calculate.js       # Matemática pura, sin nada de React (fácil de testear)
-├── App.jsx                 # Componente raíz
-├── main.jsx                # Punto de entrada, monta React en el HTML
-└── index.css                # Estilos globales / tokens de diseño
+│   └── calculate.js       # Matemática pura, sin nada de React
+├── App.jsx                # Componente raíz
+├── main.jsx               # Punto de entrada, monta React en el HTML
+└── index.css              # Estilos globales / tokens de diseño
 ```
 
 ## Cómo subirlo a GitHub (requisito de control de versiones)
@@ -57,6 +47,7 @@ git init
 git add .
 git commit -m "Calculadora React - prueba técnica"
 git branch -M main
-git remote add origin <URL-DE-TU-REPOSITORIO>
+git remote add origin <URL-REPOSITORIO>
 git push -u origin main
 ```
+
