@@ -1,0 +1,44 @@
+:root {
+  /* Paleta de colores */
+  --bg: #15161a;
+  --panel: #1e2024;
+  --display-bg: #0b0c0e;
+  --display-glow: #ffb454;
+  --text-primary: #f5f6f7;
+  --text-dim: #8a8d94;
+
+  --btn-number: #2c2e33;
+  --btn-number-hover: #383a40;
+  --btn-function: #3d4046;
+  --btn-function-hover: #4a4d54;
+  --btn-operator: #ffb454;
+  --btn-operator-hover: #ffc476;
+  --btn-equals: #ff6b4a;
+  --btn-equals-hover: #ff8064;
+
+  --radius: 14px;
+  --font-display: 'JetBrains Mono', 'Courier New', monospace;
+  --font-ui: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-ui);
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
